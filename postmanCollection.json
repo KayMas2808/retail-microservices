@@ -1,0 +1,85 @@
+{
+  "info": {
+    "_postman_id": "a8b4d2e1-ba48-4383-88b1-3375e2d1b82f",
+    "name": "Retail Microservices",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Order Service",
+      "item": [
+        {
+          "name": "Place Order",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8082/orders/123",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8082",
+              "path": [
+                "orders",
+                "123"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Payment Service",
+      "item": [
+        {
+          "name": "Get Payment Details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8083/payments/456",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8083",
+              "path": [
+                "payments",
+                "456"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Product Service",
+      "item": [
+        {
+          "name": "Order Product (calls other services)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8085/products/789/order",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8085",
+              "path": [
+                "products",
+                "789",
+                "order"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
