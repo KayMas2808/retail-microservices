@@ -17,7 +17,6 @@ how to run this thing
 mvn clean install
 
 once you've done that for all three, go back to the root and run docker compose:
-Bash
 
     docker-compose up --build
 
